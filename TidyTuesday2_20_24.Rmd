@@ -1,0 +1,30 @@
+---
+title: "TidyTuesday 20 Feb 2024"
+author: "COMP/STAT 112"
+date: "2024-02-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+
+library(tidytuesdayR)
+library(tidyverse)
+
+isc_grants <- read_csv("https://raw.githubusercontent.com/djoloughlin/tidytuesday2_20_2024/main/isc_grants.csv")
+
+
+str(isc_grants)
+```
+
+```{r}
+
+dim(isc_grants)
+
+isc_grants$summary[1]
+
+```
